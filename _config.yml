@@ -9,7 +9,10 @@
 title: Eric Whitmire
 email: emwhit@cs.washington.edu
 description: > # this means to ignore newlines until "baseurl:"
-  
+
+collections:
+- publications
+
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://ericwhitmire.com" # the base hostname & protocol for your site
 github_username:  ewhitmire
@@ -17,3 +20,9 @@ linkedin_username:  ericwhitmire
 
 # Build settings
 markdown: kramdown
+
+
+sass:
+    load_paths:
+        - _sass
+        - bower_components

@@ -1,0 +1,69 @@
+@charset "utf-8";
+
+@font-face {
+    font-family: "Avenir";
+    src: url("fonts/Avenir-Medium.woff") format('woff');
+}
+@font-face {
+    font-family: "AvenirHeavy";
+    src: url("fonts/Avenir-Heavy.woff") format('woff');
+}
+
+$icon-font-path: "/bower_components/bootstrap-sass/assets/fonts/bootstrap/";
+
+// Font stacks
+$avenir: Avenir, Helvetica, Arial;
+$avenirHeavy: AvenirHeavy, Helvetica, Arial;
+$helvetica: Helvetica, Arial, sans-serif;
+$helveticaNeue: "Helvetica Neue", Helvetica, Arial, sans-serif;
+$georgia: Georgia, serif;
+$opensans: 'Open Sans', sans-serif;
+
+// Our variables
+$font-family-base: $avenir;
+$font-size-base:   16px;
+$font-weight-base: 400;
+$small-font-size:  $font-size-base * 0.875;
+$line-height-base: 1.5;
+
+$spacing-unit:     30px;
+
+$text-color:       #111;
+$background-color: #fdfdfd;
+$brand-color:      #2a7ae2;
+
+$grey-color:       #828282;
+$grey-color-light: lighten($grey-color, 40%);
+$grey-color-dark:  darken($grey-color, 25%);
+
+// Width of the content area
+$content-width:    800px;
+
+$on-palm:          600px;
+$on-laptop:        800px;
+
+// Colors
+$blue: #4183C4;
+
+// Grays
+$black: #000;
+$darkerGray: #222;
+$darkGray: #333;
+$gray: #666;
+$lightGray: #eee;
+$white: #fff;
+
+
+
+// Use media queries like this:
+// @include media-query($on-palm) {
+//     .wrapper {
+//         padding-right: $spacing-unit / 2;
+//         padding-left: $spacing-unit / 2;
+//     }
+// }
+@mixin media-query($device) {
+    @media screen and (max-width: $device) {
+        @content;
+    }
+}

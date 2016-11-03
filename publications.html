@@ -4,98 +4,20 @@ title: Publications
 permalink: /publications/
 weight: 2
 ---
-<div class="pub row">
-    <div class="col-xs-6 col-sm-3 col-md-2"><img src="{{ "/img/pubs/eyecontact_thumbnail.png" | prepend: site.baseurl }}"/></div>
-    <div class="col-xs-6 col-sm-9 col-md-10">
-        <div class="title">EyeContact: Scleral Coil Eye Tracking for Virtual Reality</div>
-        <div class="authors"><b>Eric Whitmire</b>, Laura Trutoiu, Robert Cavin, David Perek, Brian Scally, James O. Phillips, Shwetak Patel</div>
-        <div class="venue">ISWC 2016. Heidelberg, Germany. Acceptance Rate: 28.8%</div>
-        <!--<div class="links"><a class='btn btn-default' href="{{ "/pdfs/EyeContact.pdf" | prepend: site.baseurl }}"><span class="glyphicon glyphicon-save-file" aria-hidden="true"></span> Paper</a></div>-->
-    </div>
-</div>
-<div class="pub row">
-    <div class="col-xs-6 col-sm-3 col-md-2"><img src="{{ "/img/pubs/spirocall_thumbnail.jpeg" | prepend: site.baseurl }}"/></div>
-    <div class="col-xs-6 col-sm-9 col-md-10">
-        <div class="title">SpiroCall: Measuring Lung Function over a Phone Call</div>
-        <div class="authors">Mayank Goel, Elliot Saba, Maia Stiber, <b>Eric Whitmire</b>, Josh Fromm, Eric Larson, Gaetano Borriello, Shwetak Patel</div>
-        <div class="venue">CHI 2016. San Jose, USA. </div>
-        <div class="note award">Honorable Mention Award</div>
-        <div class="links"><a class='btn btn-default' href="{{ "/pdfs/SpiroCall.pdf" | prepend: site.baseurl }}"><span class="glyphicon glyphicon-save-file" aria-hidden="true"></span> Paper</a></div>
-    </div>
-</div>
+{% assign grad_pubs = site.publications | where_exp: "pub", "pub.group != 'undergrad'" %}
+{% assign sorted_pubs = grad_pubs | sort: 'date' %}
 
-<div class="pub row">
-    <div class="col-xs-6 col-sm-3 col-md-2"><img src="{{ "/img/pubs/hypercam_thumbnail.jpg" | prepend: site.baseurl }}"/></div>
-    <div class="col-xs-6 col-sm-9 col-md-10">
-        <div class="title">HyperCam: Hyperspectral Imaging for Ubiquitous Computing Applications</div>
-        <div class="authors">Mayank Goel, <b>Eric Whitmire</b>, Alex Mariakakis, Scott Saponas, Neel Joshi, Dan Morris, Brian Guenter, Marcel Gavriliu, Gaetano Borriello, Shwetak Patel</div>
-        <div class="venue">UbiComp 2015. Osaka, Japan. Acceptance Rate: 23.6% </div>
-        <div class="note award">Honorable Mention Award</div>
-        <div class="note press"><b>Press: </b>
-            <a href="http://www.engadget.com/2015/10/16/university-of-washington-hyperspectral-imaging/">Engadget</a>, 
-            <a href="http://www.gizmag.com/hypercam-hyperspectral-camera/39926/">gizmag</a>, 
-            <a href="http://www.smithsonianmag.com/innovation/camera-sees-what-your-eyes-cant-180957036">Smithsonian Magazine</a></div>
-        <div class="links"><a class='btn btn-default' href="{{ "/pdfs/HyperCam.pdf" | prepend: site.baseurl }}"><span class="glyphicon glyphicon-save-file" aria-hidden="true"></span> Paper</a></div>
-    </div>
-</div>
+{% for pub in sorted_pubs reversed %}
+{% include pub_badge.html pub=pub %}
+{% endfor %}
 
 <hr>
-<h2>Undergraduate</h2>
 
-<div class="pub row">
-    <div class="col-xs-6 col-sm-3 col-md-2"><img src="{{ "/img/pubs/acoustic_thumbnail.jpg" | prepend: site.baseurl }}"/></div>
-    <div class="col-xs-6 col-sm-9 col-md-10">
-        <div class="title">Acoustic Sensors for Biobotic Search and Rescue</div>
-        <div class="authors"><b>Eric Whitmire</b>, Tahmid Latif, Alper Bozkurt</div>
-        <div class="venue">IEEE Sensors 2014. Valencia, Spain. </div>
-        <div class="note press"><b>Press: </b>
-            <a href="http://www.cnet.com/news/future-of-search-and-rescue-cockroaches-piloted-by-kinect/">CNET</a>, 
-            <a href="http://techcrunch.com/2014/11/07/biorobotic-roaches-can-can-use-microphones-to-search-rubble-for-survivors/">TechCrunch</a>, 
-            <a href="http://www.independent.co.uk/life-style/gadgets-and-tech/cyborg-cockroaches-with-wireless-microphones-could-help-rescue-disaster-survivors-9855612.html">The Independent</a></div>
-        <div class="links">
-            <a class='btn btn-default' href="{{ "/pdfs/acoustic_biobot.pdf" | prepend: site.baseurl }}"><span class="glyphicon glyphicon-save-file" aria-hidden="true"></span> Paper</a>
-            <a class='btn btn-default' href="https://www.youtube.com/watch?v=R-IzkGA9hTc"><span class="glyphicon glyphicon-film" aria-hidden="true"></span> Video</a>
-        </div>
-    </div>
-</div>
+{% assign ugrad_pubs = site.publications | where_exp: "pub", "pub.group == 'undergrad'" %}
+{% assign sorted_ugrad_pubs = ugrad_pubs | sort: 'date' %}
+<h1>Undergraduate</h1>
+{% for pub in sorted_ugrad_pubs reversed %}
+{% include pub_badge.html pub=pub %}
+{% endfor %}
 
-<div class="pub row">
-    <div class="col-xs-6 col-sm-3 col-md-2"><img src="{{ "/img/pubs/soliband_thumbnail.jpg" | prepend: site.baseurl }}"/></div>
-    <div class="col-xs-6 col-sm-9 col-md-10">
-        <div class="title">Solar powered wrist worn acquisition system for continuous photoplethysmogram monitoring</div>
-        <div class="authors">James Dieffenderfer, Eric Beppler, Tristan Novak, <b>Eric Whitmire</b>, Rochana Jayakumar, Clive Randall, Weiguo Qu, Ramakrishnan Rajagopalan, and Alper Bozkurt</div>
-        <div class="venue">IEEE EMBC 2014. Chicago, IL. </div>
-        <div class="links"><a class='btn btn-default' href="{{ "/pdfs/wrist_photoplethysmogram.pdf" | prepend: site.baseurl }}"><span class="glyphicon glyphicon-save-file" aria-hidden="true"></span> Paper</a></div>
-    </div>
-</div>
 
-<div class="pub row">
-    <div class="col-xs-6 col-sm-3 col-md-2"><img src="{{ "/img/pubs/fenceless_thumbnail.jpg" | prepend: site.baseurl }}"/></div>
-    <div class="col-xs-6 col-sm-9 col-md-10">
-        <div class="title">Toward Fenceless Boundaries for Solar Powered Insect Biobots</div>
-        <div class="authors">Tahmid Latif, <b>Eric Whitmire</b>, Tristan Novak, Alper Bozkurt</div>
-        <div class="venue">IEEE EMBC 2014. Chicago, IL. </div>
-        <div class="links">
-            <a class='btn btn-default' href="{{ "/pdfs/fenceless_biobot.pdf" | prepend: site.baseurl }}"><span class="glyphicon glyphicon-save-file" aria-hidden="true"></span> Paper</a>
-            <a class='btn btn-default' href="https://www.youtube.com/watch?v=mWGAKd7_fAM"><span class="glyphicon glyphicon-film" aria-hidden="true"></span> Video</a>
-        </div>
-    </div>
-</div>
-
-<div class="pub row">
-    <div class="col-xs-6 col-sm-3 col-md-2"><img src="{{ "/img/pubs/kinect_biobot_thumbnail.jpg" | prepend: site.baseurl }}"/></div>
-    <div class="col-xs-6 col-sm-9 col-md-10">
-        <div class="title">Kinect-based System for Automated Control of Terrestrial Insect Biobots</div>
-        <div class="authors"><b>Eric Whitmire</b>, Tahmid Latif, Alper Bozkurt</div>
-        <div class="venue">IEEE EMBC 2013. Osaka, Japan. </div>
-        <div class="note press"><b>Press: </b>
-            <a href="http://spectrum.ieee.org/tech-talk/robotics/military-robots/kinect-used-in-first-roboroach-autopilot-system">IEEE Spectrum</a>, 
-            <a href="http://abcnews.go.com/Technology/kinected-cockroach-crawls-demand/story?id=19495963">ABC News</a>, 
-            <a href="http://fortune.com/2014/08/04/cockroach-kinect/">Fortune</a></div>
-        <div class="links">
-            <a class='btn btn-default' href="{{ "/pdfs/kinect_biobot.pdf" | prepend: site.baseurl }}"><span class="glyphicon glyphicon-save-file" aria-hidden="true"></span> Paper</a>
-            <a class='btn btn-default' href="https://www.youtube.com/watch?v=R-IzkGA9hTc"><span class="glyphicon glyphicon-film" aria-hidden="true"></span> Video</a>
-        </div>
-    </div>
-
-</div>

@@ -14,7 +14,6 @@
 }
 
 .pub .title {
-    color: rgb(185, 0, 0);
     font-size: 12pt;
 }
 .pub .authors {
@@ -39,4 +38,57 @@
 
 .pub .links {
     
+}
+
+.publication-badge {
+  margin-bottom: 15px;
+  font-size: 10pt;
+  .glyphicon-file {
+    color: #980000;
+  }
+  
+  .publication-pic {
+    max-width: 300px;
+    a {
+      display: block;
+      position: relative;
+      padding-bottom: 56.25%;
+      //border-radius: 10px;
+      overflow: hidden;
+      @media (min-width: 768px){
+      }
+      img {
+
+        width: 100%;
+        vertical-align: middle;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        @media (min-width: 768px){
+          //max-width: 150px;
+        }
+      }
+    }
+  }
+  .authors a {
+    color: $darkGray;
+    text-decoration: underline;
+  }
+  h2 {
+    margin-top: 0px;
+    margin-bottom: 2px;
+    font-size: 16px;
+    font-family: $avenirHeavy;
+  }
+  
+  .btn {
+    //width: 70px;
+    //margin-top: 5px;
+    //text-align:left;
+  }
+  
+  .award {
+    color: #c70000;
+    font-family: $avenirHeavy;
+  }
 }
