@@ -25,4 +25,3 @@ markdown: kramdown
 sass:
     load_paths:
         - _sass
-        - bower_components
