@@ -1,9 +1,10 @@
 ---
-layout: page
 title: Publications
-permalink: /publications/
+permalink: "/publications/"
+layout: page
 weight: 2
 ---
+
 {% assign grad_pubs = site.publications | where_exp: "pub", "pub.group != 'undergrad'" %}
 {% assign sorted_pubs = grad_pubs | sort: 'date' %}
 

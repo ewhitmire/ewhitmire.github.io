@@ -1,28 +1,23 @@
-# Welcome to Jekyll!
-#
-# This config file is meant for settings that affect your whole blog, values
-# which you are expected to set up once and rarely need to edit after that.
-# For technical reasons, this file is *NOT* reloaded automatically when you use
-# 'jekyll serve'. If you change this file, please restart the server process.
-
-# Site settings
+---
 title: Eric Whitmire
-email: emwhit@cs.washington.edu
-description: > # this means to ignore newlines until "baseurl:"
-
+timezone: UTC
 collections:
-- publications
-
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://ericwhitmire.com" # the base hostname & protocol for your site
-github_username:  ewhitmire
-linkedin_username:  ericwhitmire
-
-# Build settings
+  posts:
+    title: Posts
+    output: true
+  publications:
+    title: Publications
+    output: false
+  uploads:
+    title: Uploads
+    output: true
+email: emwhit@cs.washington.edu
+description: ''
+baseurl: ''
+url: http://ericwhitmire.com
+github_username: ewhitmire
+linkedin_username: ericwhitmire
 markdown: kramdown
-
-# exclude: [bower_components/bootstrap-sass/CHANGELOG.md]
-
 sass:
-    load_paths:
-        - _sass
+  load_paths:
+  - _sass
