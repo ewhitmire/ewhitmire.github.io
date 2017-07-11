@@ -21,7 +21,7 @@ linkedin_username:  ericwhitmire
 # Build settings
 markdown: kramdown
 
-exclude: [bower_components/bootstrap-sass/CHANGELOG.md]
+# exclude: [bower_components/bootstrap-sass/CHANGELOG.md]
 
 sass:
     load_paths:

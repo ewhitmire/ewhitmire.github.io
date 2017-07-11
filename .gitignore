@@ -1,4 +1,12 @@
 _site
-.sass-cache
+.DS_Store
+.jekyll
 .jekyll-metadata
-.DS_STORE
+.bundle
+.sass-cache
+Gemfile.lock
+node_modules
+package.json
+resources/files
+resources/pdfs
+.idea/
