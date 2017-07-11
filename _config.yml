@@ -21,3 +21,4 @@ markdown: kramdown
 sass:
   load_paths:
   - _sass
+exclude: ['.gitignore', '**/CHANGELOG.md', 'Gemfile', 'Gemfile.lock', '**/LICENSE.md', '**/README.md']
