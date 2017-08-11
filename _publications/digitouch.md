@@ -9,6 +9,7 @@ authors:
 - Greg Nelson
 - Ravi Karkar
 - patel
+- goel
 conference: Proceedings of the ACM on Interactive, Mobile, Wearable and Ubiquitous
   Technologies (IMWUT), 2017
 image: "/images/pubs/digitouch.png"
