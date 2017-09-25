@@ -26,7 +26,16 @@ abstract: 'Spirometry plays a critical role in characterizing and improving outc
   to administer spirometry tests by demonstrating the ability to automatically detect
   specific errors and provide appropriate patient feedback. This will increase the
   availability of spirometry, especially in low resource and telemedicine contexts.
-
 '
+bibtex: |
+  @inproceedings{luo2017automatic,
+    title={Automatic characterization of user errors in spirometry},
+    author={Luo, Andrew Z and Whitmire, Eric and Stout, James W and Martenson, Drew and Patel, Shwetak},
+    booktitle={Engineering in Medicine and Biology Society (EMBC), 2017 39th Annual International Conference of the IEEE},
+    pages={4239--4242},
+    year={2017},
+    organization={IEEE}
+  }
+citation: |
+    Andrew Luo, Eric Whitmire, James W. Stout, Drew Martenson, and Shwetak Patel. 2017. Automatic Characterization of User Errors in Spirometry. In Engineering in Medicine and Biology Society (EMBC), 2017 39th Annual International Conference of the IEEE, pp. 4239-4242. IEEE, 2017
 ---
-

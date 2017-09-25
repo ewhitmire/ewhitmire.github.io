@@ -1,7 +1,7 @@
 ---
 title: 'DigiTouch: Reconfigurable Thumb-to-Finger Input and Text Entry on Head-mounted
   Displays'
-date: 2017-09-01 00:00:00 Z
+date: 2017-09-015 00:00:00 Z
 authors:
 - whitmire
 - jain
@@ -33,7 +33,29 @@ abstract: 'Input is a significant problem for wearable systems, particularly for
   users reliably learned to type and achieved a mean typing speed of 16.0 words per
   minute at the end of ten 20-minute sessions, an improvement over similar wearable
   touch systems.
-
 '
+pdf: /pdfs/digitouch.pdf
+citation: |
+    Eric Whitmire, Mohit Jain, Divye Jain, Greg Nelson, Ravi Karkar, Shwetak Patel, and Mayank Goel. 2017. DigiTouch: Reconfigurable Thumb-to-Finger Input and Text Entry on Head-mounted Displays. Proc. ACM Interact. Mob. Wearable Ubiquitous Technol. 1, 3, Article 113 (September 2017), 21 pages. DOI: https://doi.org/10.1145/3130978
+bibtex: |
+   @article{Whitmire:2017:DRT:3139486.3130978,
+     author = {Whitmire, Eric and Jain, Mohit and Jain, Divye and Nelson, Greg and Karkar, Ravi and Patel, Shwetak and Goel, Mayank},
+     title = {DigiTouch: Reconfigurable Thumb-to-Finger Input and Text Entry on Head-mounted Displays},
+     journal = {Proc. ACM Interact. Mob. Wearable Ubiquitous Technol.},
+     issue_date = {September 2017},
+     volume = {1},
+     number = {3},
+     month = sep,
+     year = {2017},
+     issn = {2474-9567},
+     pages = {113:1--113:21},
+     articleno = {113},
+     numpages = {21},
+     url = {http://doi.acm.org/10.1145/3130978},
+     doi = {10.1145/3130978},
+     acmid = {3130978},
+     publisher = {ACM},
+     address = {New York, NY, USA},
+     keywords = {Wearable computing, eyes-free input, glove, head-mounted displays, thumb-to-finger},
+    }
 ---
-
