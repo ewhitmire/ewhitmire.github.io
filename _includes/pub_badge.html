@@ -10,7 +10,7 @@
       {% if pub.press.size > 0 %}
       <b>Press: </b>
       {% for press in pub.press %}
-      <a href="{{press.url}}">{{press.title}}</a>{% if forloop.rindex0 > 0 %}, {% endif %}
+      <a href="{{press.url}}">{{press.name}}</a>{% if forloop.rindex0 > 0 %}, {% endif %}
       {% endfor %}
       <br/>
       {% endif %}

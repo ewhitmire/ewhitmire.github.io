@@ -35,5 +35,41 @@ abstract: 'Before a person suffering from a traumatic brain injury reaches a med
   alone.
 
 '
----
+citation: |
+     Alex Mariakakis, Jacob Baudin, Eric Whitmire, Vardhman Mehta, Megan A. Banks, Anthony Law, Lynn McGrath, and Shwetak N. Patel. (2017). PupilScreen: Using Smartphones to Assess Traumatic Brain Injury. Proceedings of the ACM on Interactive, Mobile, Wearable and Ubiquitous Technologies, 1(3), 81. DOI: https://doi.org/10.1145/3131896
+press:
+ - name: Allen School News
+   url: https://news.cs.washington.edu/2017/09/06/uw-researchers-are-working-on-a-way-to-screen-for-concussion-using-a-smartphone/
+   headline: UW researchers are working on a way to screen for concussion using a smartphone
+   date: 2017-09-06
+ - name: Xconomy
+   url: http://www.xconomy.com/seattle/2017/09/06/smartphone-medicine-uw-researchers-detect-concussions-with-an-app/#
+   headline: Detecting Concussions With Machine Learning, Smartphones, and a Startup
+   date: 2017-09-06
+ - name: GeekWire
+   url: https://www.geekwire.com/2017/univ-washington-researchers-developing-smartphone-app-can-detect-concussions/
+   headline: Univ. of Washington researchers developing smartphone app that can detect concussions
+   date: 2017-09-06
+ - name: KIRO-TV
+   url: http://www.kiro7.com/news/local/uw-researchers-develop-app-to-determine-concussions/605567500
+   headline: UW researchers develop app to determine concussions
+   date: 2017-09-06
+ - name: Voice of America News
+   url: https://www.voanews.com/a/4026588.html
+   headline: Handheld Tech Can Diagnose Concussions in the Field
+   date: 2017-09-13
+bibtex: |
+   @article{mariakakis2017pupilscreen,
+   title={PupilScreen: Using Smartphones to Assess Traumatic Brain Injury},
+   author={Mariakakis, Alex and Baudin, Jacob and Whitmire, Eric and Mehta, Vardhman and Banks, Megan A and Law, Anthony and McGrath, Lynn and Patel, Shwetak N},
+   journal={Proceedings of the ACM on Interactive, Mobile, Wearable and Ubiquitous Technologies},
+   volume={1},
+   number={3},
+   pages={81},
+   year={2017},
+   publisher={ACM},
+   url={http://doi.org/10.1145/3131896},
+   doi={10.1145/3131896}
+   }
 
+---

@@ -34,11 +34,10 @@ video: ''
 video_embed: ''
 group: undergrad
 press:
-- title: CNET
+- name: CNET
   url: http://www.cnet.com/news/future-of-search-and-rescue-cockroaches-piloted-by-kinect/
-- title: TechCrunch
+- name: TechCrunch
   url: http://techcrunch.com/2014/11/07/biorobotic-roaches-can-can-use-microphones-to-search-rubble-for-survivors/
-- title: The Independent
+- name: The Independent
   url: http://www.independent.co.uk/life-style/gadgets-and-tech/cyborg-cockroaches-with-wireless-microphones-could-help-rescue-disaster-survivors-9855612.html
 ---
-

@@ -60,11 +60,10 @@ bibtex: |
   }
 redirect_from: "/node/589/"
 press:
-- title: Engadget
+- name: Engadget
   url: http://www.engadget.com/2015/10/16/university-of-washington-hyperspectral-imaging/
-- title: gizmag
+- name: gizmag
   url: http://www.gizmag.com/hypercam-hyperspectral-camera/39926/
-- title: Smithsonian Magazine
+- name: Smithsonian Magazine
   url: http://www.smithsonianmag.com/innovation/camera-sees-what-your-eyes-cant-180957036
 ---
-

@@ -55,11 +55,10 @@ video: https://www.youtube.com/watch?v=e62ZL3dCQWM
 video_embed: <iframe width="560" height="315" src="https://www.youtube.com/embed/e62ZL3dCQWM"
   frameborder="0" allowfullscreen></iframe>
 press:
-- title: TechCrunch
+- name: TechCrunch
   url: https://techcrunch.com/2016/05/04/spirocall-measures-lung-health-over-any-phone-no-app-necessary/
-- title: Times of India
+- name: Times of India
   url: http://timesofindia.indiatimes.com/life-style/health-fitness/health-news/Test-your-lung-function-over-a-call/articleshow/52103438.cms
-- title: Medical News Today
+- name: Medical News Today
   url: http://www.medicalnewstoday.com/articles/310068.php
 ---
-
