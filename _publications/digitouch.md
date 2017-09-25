@@ -1,7 +1,7 @@
 ---
 title: 'DigiTouch: Reconfigurable Thumb-to-Finger Input and Text Entry on Head-mounted
   Displays'
-date: 2017-09-015 00:00:00 Z
+date: 2017-09-15 00:00:00 Z
 authors:
 - whitmire
 - jain
