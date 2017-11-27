@@ -3,12 +3,9 @@
 
 // Import partials from `sass_dir` (defaults to `_sass`)
 
-@import "variables";
 
-
-//@import "bootstrap";
-  
-@import "base",
+@import "variables",
+        "base",
         "layout",
         "pubs",
         "home",

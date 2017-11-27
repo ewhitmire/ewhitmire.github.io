@@ -1,19 +1,16 @@
+<br/>
 <hr>
 <footer class="container">
-    <div class="wrapper">
+    <div class="row justify-content-between">
 
 
-        <div class="footer-col-wrapper">
-            <div class="footer-col footer-col-1">
+            <div class="col">
                 <ul class="contact-list">
                     <li>{{ site.title }}</li>
                     <li><a href="mailto:{{ site.email }}">{{ site.email }}</a></li>
                 </ul>
             </div>
-            <div class="footer-col footer-col-3">
-                <p>{{ site.description }}</p>
-            </div>
-            <div class="footer-col footer-col-2">
+            <div class="col-auto">
                 <ul class="social-media-list">
                     {% if site.github_username %}
                     <li>
@@ -36,7 +33,6 @@
             </div>
 
 
-        </div>
 
     </div>
 
