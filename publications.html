@@ -8,17 +8,20 @@ weight: 2
 {% assign grad_pubs = site.publications | where_exp: "pub", "pub.group != 'undergrad'" %}
 {% assign sorted_pubs = grad_pubs | sort: 'date' %}
 
+<div class="row align-items-stretch">
 {% for pub in sorted_pubs reversed %}
 {% include pub_badge.html pub=pub %}
 {% endfor %}
-
+</div>
 <hr>
 
 {% assign ugrad_pubs = site.publications | where_exp: "pub", "pub.group == 'undergrad'" %}
 {% assign sorted_ugrad_pubs = ugrad_pubs | sort: 'date' %}
 <h1>Undergraduate</h1>
+<div class="row align-items-stretch">
 {% for pub in sorted_ugrad_pubs reversed %}
 {% include pub_badge.html pub=pub %}
 {% endfor %}
+</div>
 
 

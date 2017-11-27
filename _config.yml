@@ -18,6 +18,7 @@ url: http://ericwhitmire.com
 github_username: ewhitmire
 linkedin_username: ericwhitmire
 markdown: kramdown
+keep_files: [bower_components]
 sass:
   load_paths:
   - _sass
