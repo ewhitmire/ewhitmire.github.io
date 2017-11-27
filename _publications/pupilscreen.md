@@ -14,6 +14,7 @@ conference: Proceedings of the ACM on Interactive, Mobile, Wearable and Ubiquito
   Technologies (IMWUT), 2017
 pdf: "/pdfs/pupilscreen.pdf"
 image: "/images/pubs/pupilscreen.jpg"
+video: https://youtu.be/sZwgpz4s8Jw
 thumbnail: "/images/pubs/pupilscreen_thumb.jpg"
 caption: PupilScreen uses convolutional neural networks to track the pupillary light
   reflex (PLR)

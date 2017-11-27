@@ -14,6 +14,7 @@ conference: Proceedings of the ACM on Interactive, Mobile, Wearable and Ubiquito
   Technologies (IMWUT), 2017
 image: "/images/pubs/digitouch.png"
 thumbnail: "/images/pubs/digitouch_thumb.png"
+video: https://youtu.be/4d_RMTVn9eQ
 caption: DigiTouch is a reconfigurable glove that senses thumb-to-finger touches.
   It enables general input as well as text entry on head-mounted displays.
 abstract: 'Input is a significant problem for wearable systems, particularly for head
