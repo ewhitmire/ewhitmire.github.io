@@ -16,6 +16,7 @@ conference: UbiComp '15
 award: Honorable Mention Award
 pdf: "/pdfs/hypercam.pdf"
 image: "/images/pubs/hypercam.jpg"
+video: https://youtu.be/0b283zc7fQ4
 thumbnail: "/images/pubs/hypercam_thumb.jpg"
 caption: These are some hands
 citation: 'Mayank Goel, Eric Whitmire, Alex Mariakakis, T. Scott Saponas, Neel Joshi,
