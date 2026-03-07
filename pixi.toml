@@ -1,0 +1,15 @@
+[workspace]
+name = "ewhitmire-github-io"
+version = "0.1.0"
+channels = ["conda-forge"]
+platforms = ["osx-arm64", "osx-64", "linux-64"]
+
+[dependencies]
+python = ">=3.11"
+
+[pypi-dependencies]
+pymupdf = "*"
+
+[tasks]
+discover-pubs = "python scripts/discover_publications.py"
+fetch-pub = "python scripts/fetch_publication.py"
