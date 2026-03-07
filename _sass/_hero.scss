@@ -1,0 +1,104 @@
+/**
+ * Hero Section
+ */
+
+.hero {
+  padding: 2.5rem 0;
+  border-bottom: 1px solid $border-light;
+
+  @media (max-width: $breakpoint-md) {
+    padding: 1.75rem 0;
+  }
+}
+
+.hero-content {
+  max-width: $content-max-width;
+  margin: 0 auto;
+  padding: 0 $container-padding;
+}
+
+.hero-layout {
+  display: flex;
+  align-items: flex-start;
+  gap: 2.5rem;
+
+  @media (max-width: $breakpoint-md) {
+    flex-direction: column-reverse;
+    gap: 1.5rem;
+  }
+}
+
+.hero-text {
+  flex: 1;
+}
+
+.hero-portrait {
+  flex-shrink: 0;
+
+  img {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center top;
+
+    @media (max-width: $breakpoint-md) {
+      width: 120px;
+      height: 120px;
+    }
+  }
+}
+
+.hero-name {
+  font-size: $h1-size;
+  font-weight: $font-weight-semibold;
+  margin-bottom: 0.25rem;
+  letter-spacing: -0.02em;
+
+  @media (max-width: $breakpoint-md) {
+    font-size: 2rem;
+  }
+}
+
+.hero-role {
+  font-size: 1.125rem;
+  color: $text-secondary;
+  margin-bottom: 1.5rem;
+  font-weight: $font-weight-base;
+}
+
+.hero-tagline {
+  font-size: $font-size-small;
+  line-height: 1.6;
+  color: $text-secondary;
+  margin-bottom: 0;
+}
+
+.hero-bio {
+  margin-top: 1.5rem;
+}
+
+.hero-bullets {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  color: $text-secondary;
+  font-size: $font-size-small;
+
+  li {
+    position: relative;
+    padding-left: 1rem;
+    margin-bottom: 0.375rem;
+
+    &::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 0.6em;
+      width: 4px;
+      height: 4px;
+      background-color: $text-tertiary;
+      border-radius: 50%;
+    }
+  }
+}

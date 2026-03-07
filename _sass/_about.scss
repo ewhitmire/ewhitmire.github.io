@@ -1,0 +1,39 @@
+/**
+ * About Section
+ */
+
+.about {
+  padding: 2.5rem 0;
+  border-bottom: 1px solid $border-light;
+
+  @media (max-width: $breakpoint-md) {
+    padding: 1.75rem 0;
+  }
+}
+
+.about-content {
+  max-width: $content-max-width;
+  margin: 0 auto;
+  padding: 0 $container-padding;
+}
+
+.about-text {
+  p {
+    margin-bottom: 0.75rem;
+    color: $text-secondary;
+    font-size: $font-size-small;
+    line-height: 1.6;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  a {
+    color: $accent;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}

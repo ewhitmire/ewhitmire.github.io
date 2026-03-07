@@ -2,24 +2,18 @@
 title: Eric Whitmire
 timezone: UTC
 collections:
-  posts:
-    title: Posts
-    output: true
   publications:
     title: Publications
     output: false
-  uploads:
-    title: Uploads
-    output: true
-email: ewhitmire@fb.com
-description: ''
+email: ewhitmire@meta.com
+description: 'Research Scientist at Meta working at the intersection of human-computer interaction, systems, and robotics.'
 baseurl: ''
-url: http://ericwhitmire.com
+url: https://ericwhitmire.com
 github_username: ewhitmire
 linkedin_username: ericwhitmire
+google_scholar_url: https://scholar.google.com/citations?hl=en&user=DcI0h4gAAAAJ
 markdown: kramdown
-keep_files: [bower_components]
 sass:
   load_paths:
   - _sass
-exclude: ['.gitignore', '**/CHANGELOG.md', 'Gemfile', 'Gemfile.lock', '**/LICENSE.md', '**/README.md']
+exclude: ['.gitignore', 'Gemfile', 'Gemfile.lock', 'README.md']

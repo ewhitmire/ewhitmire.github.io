@@ -1,0 +1,24 @@
+<div class="pub-item{% if include.pub.thumbnail %} has-thumbnail{% endif %}">
+  {% if include.pub.thumbnail %}
+  <div class="pub-thumbnail">
+    {% if include.pub.pdf %}<a href="{{ include.pub.pdf }}">{% endif %}
+    <img src="{{ include.pub.thumbnail }}" alt="{{ include.pub.title }}">
+    {% if include.pub.pdf %}</a>{% endif %}
+  </div>
+  {% endif %}
+  <div class="pub-details">
+    <div class="pub-title">
+      {% if include.pub.pdf %}<a href="{{ include.pub.pdf }}">{{ include.pub.title }}</a>{% else %}{{ include.pub.title }}{% endif %}
+    </div>
+    <div class="pub-authors">{% include author_list.html authors=include.pub.authors %}</div>
+    <div class="pub-venue">
+      {{ include.pub.conference }}{% if include.pub.award %}<span class="pub-award">{{ include.pub.award }}</span>{% endif %}
+    </div>
+    {% if include.pub.pdf or include.pub.video %}
+    <div class="pub-links">
+      {% if include.pub.pdf %}<a href="{{ include.pub.pdf }}">PDF</a>{% endif %}
+      {% if include.pub.video %}<a href="{{ include.pub.video }}" target="_blank" rel="noopener">Video</a>{% endif %}
+    </div>
+    {% endif %}
+  </div>
+</div>

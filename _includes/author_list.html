@@ -3,11 +3,7 @@
 {% assign author_match = site.data.members | where: "id",author_id %}
 {% if author_match.size >= 1 %}
 {% assign author = author_match | first %}
-{% if author_id == "whitmire" %}
-<b>{{ author.name }}</b>
-{% else %}
 {{ author.name }}
-{% endif %}
 {% else %}
 {{ author_id }}
 {% endif %}
