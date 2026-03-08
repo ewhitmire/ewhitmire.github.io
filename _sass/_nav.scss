@@ -1,0 +1,77 @@
+/**
+ * Navigation
+ */
+
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background-color: rgba($background, 0.95);
+  backdrop-filter: blur(8px);
+  border-bottom: 1px solid $border-light;
+}
+
+.site-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: $content-max-width;
+  margin: 0 auto;
+  padding: 0.75rem $container-padding;
+
+  @media (max-width: $breakpoint-md) {
+    flex-direction: column;
+    gap: 0.5rem;
+    padding: 0.5rem $container-padding;
+  }
+}
+
+.site-title {
+  font-size: 1.125rem;
+  font-weight: $font-weight-semibold;
+  color: $text-primary;
+  text-decoration: none;
+  opacity: 0;
+  transition: opacity $transition-base;
+  pointer-events: none;
+
+  &.visible {
+    opacity: 1;
+    pointer-events: auto;
+  }
+
+  &:hover {
+    color: $text-primary;
+    text-decoration: none;
+  }
+}
+
+.nav-links {
+  display: flex;
+  gap: 1.5rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  @media (max-width: $breakpoint-md) {
+    gap: 1rem;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+.nav-link {
+  font-size: $font-size-small;
+  color: $text-secondary;
+  text-decoration: none;
+  transition: color $transition-base;
+
+  &:hover {
+    color: $text-primary;
+    text-decoration: none;
+  }
+
+  &.active {
+    color: $text-primary;
+  }
+}

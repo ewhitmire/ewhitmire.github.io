@@ -1,29 +1,44 @@
 @charset "utf-8";
 
+// Typography
+$font-family-base: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+$font-family-mono: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace;
 
-$text-color:       #111;
-$background-color: #fdfdfd;
-$brand-color:      #2a7ae2;
+$font-size-base: 18px;
+$font-size-small: 0.875rem;
+$font-size-xs: 0.8125rem;
+$font-weight-base: 400;
+$font-weight-medium: 500;
+$font-weight-semibold: 600;
+$line-height-base: 1.6;
+$line-height-tight: 1.3;
 
-$grey-color:       #828282;
-$grey-color-light: lighten($grey-color, 40%);
-$grey-color-dark:  darken($grey-color, 25%);
-
+// Heading scale
+$h1-size: 2.5rem;
+$h2-size: 1.5rem;
+$h3-size: 1.125rem;
 
 // Colors
-$blue: #4183C4;
+$text-primary: #1a1a1a;
+$text-secondary: #555;
+$text-tertiary: #888;
+$background: #fff;
+$background-alt: #fafafa;
+$border-light: #e5e5e5;
+$accent: #2563eb;
+$accent-hover: #1d4ed8;
+$award-color: #b91c1c;
 
-// Grays
-$black: #000;
-$darkerGray: #222;
-$darkGray: #333;
-$gray: #666;
-$lightGray: #eee;
-$white: #fff;
+// Spacing
+$section-padding-y: 4rem;
+$section-padding-y-mobile: 2.5rem;
+$content-max-width: 900px;
+$container-padding: 1.5rem;
 
-$font-size-base:   16px;
-$font-weight-base: 400;
-$small-font-size:  $font-size-base * 0.875;
-$line-height-base: 1.5;
+// Breakpoints (matching Bootstrap)
+$breakpoint-sm: 576px;
+$breakpoint-md: 768px;
+$breakpoint-lg: 992px;
 
-$spacing-unit:     30px;
+// Transitions
+$transition-base: 0.2s ease;

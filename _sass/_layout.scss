@@ -1,87 +1,29 @@
 /**
- * Site header
- */
-.site-header {
-    border-top: 5px solid $grey-color-dark;
-    //border-bottom: 1px solid $grey-color-light;
-    min-height: 56px;
-
-    // Positioning context for the mobile navigation icon
-    position: relative;
-}
-
-.site-title {
-    font-size: 26px;
-    font-weight: 300;
-    line-height: 56px;
-    letter-spacing: -1px;
-    margin-bottom: 0;
-    float: left;
-
-    &,
-    &:visited {
-        color: $grey-color-dark;
-    }
-}
-
-/**
- * Site footer
+ * Layout
  */
 
-.site-footer {
-    border-top: 1px solid $grey-color-light;
-    padding: $spacing-unit 0;
+.site-container {
+  max-width: $content-max-width;
+  margin: 0 auto;
+  padding: 0 $container-padding;
 }
 
-.footer-heading {
-    font-size: 18px;
-    margin-bottom: $spacing-unit / 2;
+.section {
+  padding: $section-padding-y 0;
+
+  @media (max-width: $breakpoint-md) {
+    padding: $section-padding-y-mobile 0;
+  }
 }
 
-.contact-list,
-.social-media-list {
-    list-style: none;
-    margin-left: 0;
+.section-title {
+  font-size: $h2-size;
+  font-weight: $font-weight-semibold;
+  margin-bottom: 2rem;
+  color: $text-primary;
 }
 
-
-
-
-/**
- * Page content
- */
-.page-content {
-    padding: $spacing-unit 0;
-}
-
-.page-heading {
-    font-size: 20px;
-}
-
-.post-list {
-    margin-left: 0;
-    list-style: none;
-
-    > li {
-        margin-bottom: $spacing-unit;
-    }
-}
-
-.post-meta {
-    font-size: $small-font-size;
-    color: $grey-color;
-}
-
-.post-link {
-    display: block;
-    font-size: 24px;
-}
-
-
-
-/**
- * Posts
- */
-.post-header {
-    margin-bottom: $spacing-unit;
+// Offset anchor targets for sticky nav (~50px nav height + a little breathing room)
+section[id] {
+  scroll-margin-top: 60px;
 }

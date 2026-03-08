@@ -3,10 +3,11 @@
 
 // Import partials from `sass_dir` (defaults to `_sass`)
 
-
 @import "variables",
         "base",
         "layout",
-        "pubs",
-        "home",
-        "svg-icons";
+        "nav",
+        "hero",
+        "publications",
+        "about",
+        "contact";

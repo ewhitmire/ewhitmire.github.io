@@ -1,28 +1,12 @@
 <header class="site-header">
-    <div class="wrapper">
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <div class="container">
-                <a class="navbar-brand" href="#">Eric Whitmire</a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbar">
-                    <ul class="navbar-nav">
-                        {% assign pages = site.pages | sort:"weight"  %}
-                        {% for my_page in pages %}
-                        {% if my_page.title %}
-                        {% assign current = nil %}
-                        {% if my_page.url == page.url %}
-                        {% assign current = 'active' %}
-                        {% endif %}
-                        <li class="nav-item {{current}}"><a class="nav-link" href="{{ my_page.url | prepend: site.baseurl }}">{{ my_page.title }}</a></li>
-                        {% endif %}
-                        {% endfor %}
-                        <li class='nav-item'><a class="nav-link" href="{{ "/pdfs/whitmire_cv_web.pdf" | prepend: site.baseurl }}">CV</a></li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-    </div>
+  <nav class="site-nav">
+    <a href="/" class="site-title" id="nav-title">Eric Whitmire</a>
+    <ul class="nav-links">
+      <li><a href="#about" class="nav-link">About</a></li>
+      <li><a href="#publications" class="nav-link">Publications</a></li>
+      <li><a href="#contact" class="nav-link">Contact</a></li>
+      <li><a href="/pdfs/whitmire_cv_web.pdf" class="nav-link">CV</a></li>
+    </ul>
+  </nav>
 </header>
-<br/>
+

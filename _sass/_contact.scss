@@ -1,0 +1,65 @@
+/**
+ * Contact Section
+ */
+
+.contact {
+  padding: $section-padding-y 0;
+
+  @media (max-width: $breakpoint-md) {
+    padding: $section-padding-y-mobile 0;
+  }
+}
+
+.contact-content {
+  max-width: $content-max-width;
+  margin: 0 auto;
+  padding: 0 $container-padding;
+}
+
+.contact-links {
+  display: flex;
+  flex-direction: column;
+  gap: 0.625rem;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.contact-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: $font-size-small;
+  color: $text-secondary;
+  text-decoration: none;
+  transition: color $transition-base;
+
+  &:hover {
+    color: $accent;
+    text-decoration: none;
+  }
+
+  svg {
+    width: 18px;
+    height: 18px;
+    fill: currentColor;
+  }
+}
+
+/**
+ * Footer
+ */
+
+.site-footer {
+  padding: 2rem 0;
+  text-align: center;
+  color: $text-tertiary;
+  font-size: $font-size-xs;
+  border-top: 1px solid $border-light;
+}
+
+.footer-content {
+  max-width: $content-max-width;
+  margin: 0 auto;
+  padding: 0 $container-padding;
+}
